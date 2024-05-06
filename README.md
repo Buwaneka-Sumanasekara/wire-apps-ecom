@@ -5,12 +5,16 @@ Welcome to WireApps Ecommerce App!
 ## Author
 - **Author:** Buwaneka Sumanasekara
 
-## Technologies Used
+## Technologies / Frameworks / Packages Used
 
   - React Native (Expo)
   - Redux
+  - React Navigation
   - Tailwind Css
   - JavaScript
+
+## Design 
+  - Atomic Design methodology
   
 
 ## Features
@@ -27,3 +31,21 @@ Welcome to WireApps Ecommerce App!
 1. Clone the repository:
    ```bash
    git clone https://github.com/Buwaneka-Sumanasekara/wire-apps-ecom.git
+
+
+2. Add base api url to env as follows
+``
+EXPO_PUBLIC_API_URL=https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com
+``
+
+3. Run application using following command
+
+``
+yarn start 
+``
+
+or 
+
+``
+npm start
+``
