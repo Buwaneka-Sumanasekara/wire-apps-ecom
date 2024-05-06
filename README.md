@@ -26,4 +26,4 @@ Welcome to WireApps Ecommerce App!
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone git@github.com:Buwaneka-Sumanasekara/wire-apps-ecom.git
+   git clone https://github.com/Buwaneka-Sumanasekara/wire-apps-ecom.git
