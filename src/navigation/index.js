@@ -1,40 +1,36 @@
-import { NavigationContainer } from "@react-navigation/native";
-import HomeScreen from "../screens/HomeScreen";
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MenuIcon from "../components/atoms/MenuIcon";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import theme from "../theme/theme.json";
 
-const Tab = createBottomTabNavigator()
+//Stacks
+import HomeStack from "./HomeStack";
+
+//Screens
+import ProductScreen from "../screens/ProductScreen";
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+const RootStack = createNativeStackNavigator()
+
+
+const appTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: theme.colors.primary,
+    background: theme.colors.background,
+  },
+};
+
 
 const NavigationStack = () => {
-    return (
-        <NavigationContainer>
-            <Tab.Navigator
-             screenOptions={({ route }) => ({
-                tabBarIcon: ({ focused, color, size }) => {
-                  let iconName;
-                  let value;
-                  if (route.name === 'Home') {
-                    iconName = "home"
-                  } else if (route.name === 'Cart') {
-                    iconName = 'cart';
-                    value=1;
-                  }
-                  return <MenuIcon name={iconName} size={size} color={color} value={value}  />;
-                },
-                tabBarActiveTintColor: 'black',
-                tabBarInactiveTintColor: 'lightgray',
-                headerTitleStyle:{
-                    color: theme.textColor
-                }
-              })}
-            
-            >
-                <Tab.Screen name="Home" options={{headerTitle:""}} component={HomeScreen} />
-                <Tab.Screen name="Cart" component={HomeScreen} />
-            </Tab.Navigator>
-        </NavigationContainer>
-    );
+  return (
+    <NavigationContainer theme={appTheme}>
+      <RootStack.Navigator screenOptions={{ headerBackTitleVisible: false, headerStyle: { shadowColor: 'transparent', elevation: 0 } }}>
+        <RootStack.Screen name="HomeTabs" options={{ headerShown: false }} component={HomeStack} />
+        <RootStack.Screen name="ProductScreen" options={{ headerTitle: "" }} component={ProductScreen} />
+      </RootStack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 export default NavigationStack;

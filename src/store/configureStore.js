@@ -1,4 +1,4 @@
-import { configureStore,applyMiddleware } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import cartReducer from './modules/cartSlice'
 import productsReducer from './modules/productsSlice'
 import {productsApiSlice} from '../services/productsApi'

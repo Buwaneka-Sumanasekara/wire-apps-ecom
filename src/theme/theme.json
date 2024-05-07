@@ -2,7 +2,8 @@
     "colors":{
         "primary":"#030303",
         "secondary":"#b3c8c8",
-        "textColor":"#030303"
+        "textColor":"#030303",
+        "background":"white"
     },
     "sizes":{
         "extraSmall":4, 
