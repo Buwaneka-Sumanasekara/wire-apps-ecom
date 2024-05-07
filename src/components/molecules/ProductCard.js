@@ -10,7 +10,7 @@ const ProductCard = ({ item }) => {
             <Text className={"text-base text-black font-semibold"}>{`${item.price.amount} ${item.price.currency}`}</Text>
             <View className={"flex flex-row justify-between "}>
                 <Text ellipsizeMode={"tail"} numberOfLines={2} className={"text-sm text-slate-500 basis-4/5"}>{item.name}</Text>
-                <Ionicons name="heart-outline" size={20}  />
+                <Ionicons name="heart-outline" size={25}  />
             </View>
         </View>
     </View>;
