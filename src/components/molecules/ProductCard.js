@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
-import { Ionicons } from '@expo/vector-icons';
+import AddToCartButton from "../atoms/AddToCartButton";
+
 
 const ProductCard = ({ item }) => {
 
@@ -10,7 +11,7 @@ const ProductCard = ({ item }) => {
             <Text className={"text-base text-black font-semibold"}>{`${item.price.amount} ${item.price.currency}`}</Text>
             <View className={"flex flex-row"}>
                 <Text ellipsizeMode={"tail"} numberOfLines={2} className={"text-sm text-slate-500 w-4/5"}>{item.name}</Text>
-                <Ionicons name="heart-outline" size={25} className={"self-end"}  />
+               <AddToCartButton productId={item.id} isMini={true} />
             </View>
         </View>
     </View>;

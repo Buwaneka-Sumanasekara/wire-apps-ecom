@@ -1,7 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
 import renderer from 'react-test-renderer';
-import { render, screen, fireEvent } from '@testing-library/react-native'
 
 import MenuIcon from '../../src/components/atoms/MenuIcon';
 

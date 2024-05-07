@@ -20,11 +20,6 @@ const MenuIcon = (props) => {
     return <Ionicons testID={testID} name={name} size={size} color={color} />;
 }
 
-MenuIcon.defaultProps = {
-    name: "menu",
-    size: 24,
-    color: "black",
-    testID: "menuIcon",
-}
+
 
 export default MenuIcon;
