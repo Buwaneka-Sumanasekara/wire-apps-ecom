@@ -2,22 +2,20 @@ import React from 'react';
 import ProductDetails from '../components/organisms/ProductDetails';
 import { useGetProductFromCache } from '../hooks/useProducts';
 import withProductContext from '../templates/withProductContext';
-import { useGetSelectedProductSize } from '../context/ProductContext';
 
 
 
 const ProductScreen = ({ route }) => {
     const { itemId } = route.params;
-
-
     const product = useGetProductFromCache(itemId);
 
-  
-
+    if (!product) {
+        return null;
+    }
     return (
-            <ProductDetails
-                item={product}
-            />
+        <ProductDetails
+            item={product}
+        />
     );
 }
 

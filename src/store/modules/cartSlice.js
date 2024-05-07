@@ -9,24 +9,29 @@ export const cartSlice = createSlice({
   reducers: {
     addItemToCart: (state, action) => {
         const newItem = action.payload
+        const {amount,currency}=newItem.price
         const uniqueId=`${newItem.id}-${newItem.size}`
         const existingItem = state.items.find(item => (item.uniqueId === newItem.uniqueId))
-        state.totalAmount += newItem.price
+
+        const price=parseFloat(amount)
+        const lineAmount = price * newItem.qty
+
+        state.totalAmount += lineAmount
         if (!existingItem) {
             state.items.push({
                 uniqueId: uniqueId,
                 id: newItem.id,
                 name: newItem.name,
-                price: newItem.price,
-                qty: 1,
-                currency: newItem.currency,
-                size: newItem.size,
+                price: price,
+                qty: newItem.qty || 1,
+                currency: currency,
+                size: newItem.seletedSize,
                 productInfo: newItem,
-                lineAmount: newItem.price
+                lineAmount: lineAmount
             })
         } else {
-            existingItem.qty++
-            existingItem.lineAmount = existingItem.price * existingItem.qty
+           existingItem.qty += newItem.qty
+            existingItem.lineAmount = existingItem.price * newItem.qty
 
             state.items = state.items.map(item => item.id === existingItem.id ? { ...item, ...existingItem } : item)
         }

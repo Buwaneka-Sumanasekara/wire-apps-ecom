@@ -1,13 +1,12 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItemToCart,removeItemFromCart } from '../store/modules/cartSlice';
-import { formatItemToCart } from '../utils/reduxUtils';
 
 
 /*=================Add item to cart====================*/
 export const useAddItemToCart = () => {
     const dispatch = useDispatch();
-    const addToCart = (product) => {
-        dispatch(addItemToCart(formatItemToCart(product)));
+    const addToCart = (product,size,qty) => {
+        dispatch(addItemToCart({...product,seletedSize:size,qty}));
     }
     return { addToCart };
 }
@@ -22,3 +21,14 @@ export const useRemoveItemFromCart = () => {
 }
 
 
+
+/*=================Get Cart Summary====================*/
+export const useCartSummary = () => {
+    const cartItems = useSelector(state => state.cart.items)
+    const totalAmount = useSelector(state => state.cart.totalAmount)
+   
+    return {
+        itemsCount:(cartItems || []).length,
+        totalAmount:totalAmount
+    };
+}

@@ -2,9 +2,9 @@ import { useCallback, useEffect, useState } from "react";
 import { TextInput, TouchableOpacity, View } from "react-native"
 import { Ionicons } from '@expo/vector-icons';
 
-export default QtyInput = ({ onChangeQty }) => {
+export default QtyInput = ({ onChangeQty,qty:passedQty }) => {
 
-    const [qty, setQty] = useState(1);
+    const [qty, setQty] = useState(passedQty || 1);
 
     useEffect(() => {
         onChangeQty(qty);
@@ -24,11 +24,11 @@ export default QtyInput = ({ onChangeQty }) => {
     return (
         <View className={"flex flex-row mr-3"}>
             <TouchableOpacity className={"bg-black p-2 justify-center items-center"} onPress={onDeductQty}>
-                <Ionicons name={"add"} size={15} color={"white"} />
+                <Ionicons name={"remove"} size={15} color={"white"} />
             </TouchableOpacity>
             <TextInput editable={false} value={`${qty}`} className={"border border-gray-300  p-2 w-10 text-center  items-center"} />
             <TouchableOpacity className={"bg-black p-2  justify-center  items-center"} onPress={onAddQty} >
-                <Ionicons name={"remove"} size={15} color={"white"} />
+                <Ionicons name={"add"} size={15} color={"white"} />
             </TouchableOpacity>
         </View>
     )

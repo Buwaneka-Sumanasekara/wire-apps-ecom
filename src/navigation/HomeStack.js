@@ -6,6 +6,7 @@ import CartSummary from "../components/molecules/CartSummary";
 
 //Screens
 import HomeScreen from "../screens/HomeScreen";
+import { useCartSummary } from "../hooks/useCart";
 
 
 const Tab = createBottomTabNavigator()
@@ -15,17 +16,19 @@ const Tab = createBottomTabNavigator()
 
 
 const HomeStack = () => {
+    const {itemsCount}=useCartSummary()
     return (
         <Tab.Navigator
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
+                   
                     let iconName;
                     let value;
                     if (route.name === 'HomeScreen') {
                         iconName = "home"
                     } else if (route.name === 'CartScreen') {
                         iconName = 'cart';
-                        value = 1;
+                        value = itemsCount;
                     }
                     return <MenuIcon name={iconName} size={size} color={color} value={value} />;
                 },
