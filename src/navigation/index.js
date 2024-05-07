@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/HomeScreen";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MenuIcon from "../components/atoms/MenuIcon";
+import theme from "../theme/theme.json";
 
 const Tab = createBottomTabNavigator()
 
@@ -21,12 +22,15 @@ const NavigationStack = () => {
                   }
                   return <MenuIcon name={iconName} size={size} color={color} value={value}  />;
                 },
-                tabBarActiveTintColor: 'tomato',
-                tabBarInactiveTintColor: 'gray',
+                tabBarActiveTintColor: 'black',
+                tabBarInactiveTintColor: 'lightgray',
+                headerTitleStyle:{
+                    color: theme.textColor
+                }
               })}
             
             >
-                <Tab.Screen name="Home" component={HomeScreen} />
+                <Tab.Screen name="Home" options={{headerTitle:""}} component={HomeScreen} />
                 <Tab.Screen name="Cart" component={HomeScreen} />
             </Tab.Navigator>
         </NavigationContainer>
