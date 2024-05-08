@@ -1,10 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-
 import MenuIcon from '../../src/components/atoms/MenuIcon';
-
-
-
 
 describe('<MenuIcon />', () => {
     it('rendered sucessfully', () => {

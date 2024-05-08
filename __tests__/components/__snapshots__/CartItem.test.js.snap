@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartItem /> rendered sucessfully 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "flexDirection": "row",
+      },
+      {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "flex-start",
+        "flexBasis": "16.666667%",
+        "opacity": 1,
+        "paddingRight": 16,
+      }
+    }
+  >
+    <Image
+      resizeMethod="resize"
+      resizeMode="contain"
+      source={
+        {
+          "uri": "https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com/media/44abed599ef04cf5b728cab676d57b5d_35857601_fr_puma_sc7.jpeg",
+        }
+      }
+      style={
+        [
+          {
+            "width": "100%",
+          },
+          {
+            "height": 48,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexBasis": "50%",
+        },
+        {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontWeight": "700",
+          },
+          {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      PUMA Roma Basic
+    </Text>
+    <View
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#64748b",
+            },
+          ]
+        }
+      >
+        Price: 50.00 GBP
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "backgroundColor": "#64748b",
+            },
+            {
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+            {
+              "color": "#fff",
+            },
+            {
+              "fontWeight": "700",
+            },
+            {
+              "paddingBottom": 8,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 8,
+            },
+            {
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Size: 8
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexBasis": "33.333333%",
+        },
+        {
+          "display": "flex",
+        },
+        {
+          "alignItems": "flex-end",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontSize": 14,
+            "lineHeight": 20,
+          },
+          {
+            "color": "#000",
+          },
+          {
+            "fontWeight": "700",
+          },
+          {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      50.00 GBP
+    </Text>
+    <View
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#000",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          }
+        }
+      >
+        <Text />
+      </View>
+      <TextInput
+        editable={false}
+        style={
+          [
+            {
+              "borderBottomWidth": 1,
+              "borderLeftWidth": 1,
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+            },
+            {
+              "borderBottomColor": "#d1d5db",
+              "borderLeftColor": "#d1d5db",
+              "borderRightColor": "#d1d5db",
+              "borderTopColor": "#d1d5db",
+            },
+            {
+              "paddingBottom": 8,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 8,
+            },
+            {
+              "width": 40,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "alignItems": "center",
+            },
+          ]
+        }
+        value="1"
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#000",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          }
+        }
+      >
+        <Text />
+      </View>
+    </View>
+  </View>
+</View>
+`;

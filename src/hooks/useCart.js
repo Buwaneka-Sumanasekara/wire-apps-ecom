@@ -1,10 +1,11 @@
-import { useDispatch, useSelector } from 'react-redux';
+
 import { addItemToCart,removeItemFromCart } from '../store/modules/cartSlice';
+import { useAppDispatch, useAppSelector } from './useReduxHooks';
 
 
 /*=================Add item to cart====================*/
 export const useAddItemToCart = (onSuccess=()=>{}) => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const addToCart = (product,size,qty) => {
         dispatch(addItemToCart({...product,seletedSize:size,qty}));
         onSuccess();
@@ -15,7 +16,7 @@ export const useAddItemToCart = (onSuccess=()=>{}) => {
 
 /*=================Remove item from cart====================*/
 export const useRemoveItemFromCart = () => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const removeFromCart = (uniqueId) => {
         dispatch(removeItemFromCart({uniqueId}));
     }
@@ -26,8 +27,8 @@ export const useRemoveItemFromCart = () => {
 
 /*=================Get Cart Summary====================*/
 export const useCartSummary = () => {
-    const cartItems = useSelector(state => state.cart.items)
-    const totalAmount = useSelector(state => state.cart.totalAmount)
+    const cartItems = useAppSelector(state => state.cart.items)
+    const totalAmount = useAppSelector(state => state.cart.totalAmount)
    
     return {
         itemsCount:(cartItems || []).length,
@@ -38,8 +39,8 @@ export const useCartSummary = () => {
 
 /*=================Get Cart Items====================*/
 export const useCartItems = () => {
-    const cartItems = useSelector(state => state.cart.items)
-    const totalAmount = useSelector(state => state.cart.totalAmount)
+    const cartItems = useAppSelector(state => state.cart.items)
+    const totalAmount = useAppSelector(state => state.cart.totalAmount)
    
     return {
         items:(cartItems || []),

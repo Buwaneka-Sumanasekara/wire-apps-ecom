@@ -3,13 +3,8 @@ import { Text, View } from "react-native"
 import ProductBasicInfo from "../atoms/ProductBasicInfo"
 import withPaddings from "../../templates/withPaddings"
 import ProductSizes from "../atoms/ProductSizes"
-import { useChangeProductSize } from "../../context/ProductContext"
 import QtyInput from "../atoms/QtyInput"
 import AddToCartButton from "../atoms/AddToCartButton"
-import { useAddItemToCart } from "../../hooks/useCart"
-import { showMessage } from "react-native-flash-message"
-
-
 
 const ProductDetailsBody = (props) => {
     const { onAddToCart, item, onChangeSize, selectedSize } = props;

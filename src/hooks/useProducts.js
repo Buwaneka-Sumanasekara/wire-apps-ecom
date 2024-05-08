@@ -1,11 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
 import { addItemToCache} from '../store/modules/productsSlice';
-
+import { useAppDispatch, useAppSelector } from './useReduxHooks';
 
 
 /*=================Get item from Cache====================*/
 export const useGetProductFromCache = (id) => {
-    const cachedItems = useSelector(state => state.products.cachedItems)
+    const cachedItems = useAppSelector(state => state.products.cachedItems)
     
     const product=(cachedItems || []).find(item => item.id === id)
     return product;
@@ -13,7 +12,7 @@ export const useGetProductFromCache = (id) => {
 
 /*=================Add item to Cache====================*/
 export const useAddProductToCache = (onSuccess=()=>{}) => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const showItem = (product) => {
         dispatch(addItemToCache(product));
         onSuccess(product);

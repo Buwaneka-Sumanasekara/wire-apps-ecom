@@ -1,0 +1,652 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductDetails/> rendered sucessfully 1`] = `
+<RCTScrollView>
+  <View>
+    <Image
+      source={
+        {
+          "uri": "https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com/media/7e386191b2ee40b290886a05d3e10e24_nike-air-relentless-a.jpg",
+        }
+      }
+      style={
+        [
+          {
+            "width": "100%",
+          },
+          {
+            "height": 350,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "paddingLeft": 16,
+            "paddingRight": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "paddingTop": 12,
+            },
+            {
+              "paddingBottom": 128,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "width": "66.666667%",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#475569",
+                  },
+                  {
+                    "textTransform": "uppercase",
+                  },
+                ]
+              }
+            >
+              Nike
+            </Text>
+            <Text
+              style={
+                [
+                  {
+                    "fontWeight": "700",
+                  },
+                  {
+                    "fontSize": 18,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              Nike Air Relentless 4 Mens Running Shoes
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "width": "33.333333%",
+                },
+                {
+                  "display": "flex",
+                },
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "justifyContent": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontWeight": "700",
+                  },
+                  {
+                    "fontSize": 18,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              45 GBP
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 12,
+              },
+            ]
+          }
+        >
+          <Text>
+            Choose size
+          </Text>
+          <View
+            style={
+              [
+                {
+                  "display": "flex",
+                },
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "flexWrap": "wrap",
+                },
+                {
+                  "marginLeft": -8,
+                  "marginTop": -8,
+                },
+                {
+                  "width": 750,
+                },
+                {
+                  "marginTop": 4,
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#f1f5f9",
+                  "borderBottomLeftRadius": 8,
+                  "borderBottomRightRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "borderTopRightRadius": 8,
+                  "marginLeft": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 12,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#000",
+                    },
+                  ]
+                }
+              >
+                8
+              </Text>
+            </View>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#f1f5f9",
+                  "borderBottomLeftRadius": 8,
+                  "borderBottomRightRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "borderTopRightRadius": 8,
+                  "marginLeft": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 12,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#000",
+                    },
+                  ]
+                }
+              >
+                9
+              </Text>
+            </View>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#f1f5f9",
+                  "borderBottomLeftRadius": 8,
+                  "borderBottomRightRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "borderTopRightRadius": 8,
+                  "marginLeft": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 12,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#000",
+                    },
+                  ]
+                }
+              >
+                10
+              </Text>
+            </View>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#f1f5f9",
+                  "borderBottomLeftRadius": 8,
+                  "borderBottomRightRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "borderTopRightRadius": 8,
+                  "marginLeft": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 12,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#000",
+                    },
+                  ]
+                }
+              >
+                11
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 20,
+              },
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "display": "flex",
+                },
+                {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#000",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 8,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text />
+            </View>
+            <TextInput
+              editable={false}
+              style={
+                [
+                  {
+                    "borderBottomWidth": 1,
+                    "borderLeftWidth": 1,
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                  },
+                  {
+                    "borderBottomColor": "#d1d5db",
+                    "borderLeftColor": "#d1d5db",
+                    "borderRightColor": "#d1d5db",
+                    "borderTopColor": "#d1d5db",
+                  },
+                  {
+                    "paddingBottom": 8,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 8,
+                  },
+                  {
+                    "width": 40,
+                  },
+                  {
+                    "textAlign": "center",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                ]
+              }
+              value="1"
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#000",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 8,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text />
+            </View>
+          </View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#030303",
+                  },
+                  {
+                    "display": "flex",
+                  },
+                  {
+                    "flexDirection": "row",
+                  },
+                  {
+                    "justifyContent": "center",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                  {
+                    "paddingBottom": 8,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 8,
+                  },
+                  {
+                    "borderBottomLeftRadius": 6,
+                    "borderBottomRightRadius": 6,
+                    "borderTopLeftRadius": 6,
+                    "borderTopRightRadius": 6,
+                  },
+                ]
+              }
+            >
+              <Text />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#64748b",
+                    },
+                    {
+                      "marginLeft": 4,
+                    },
+                  ]
+                }
+              >
+                Add To Cart
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Hit the tracks in these Nike Air Relentless 4 featuring flexible forefoot sole and Reslon midsole underfoot cushioning for superior comfort at each step. The ridged outsole ensures excellent traction while the cushioned ankle collar and the anatomically shaped insole guarantee great support for the whole foot. The mesh upper panels provide breathability and airflow within the shoe.
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

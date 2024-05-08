@@ -1,3 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<AddToCartButton /> rendered sucessfully 1`] = `<Text />`;
+exports[`<AddToCartButton /> rendered sucessfully 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#030303",
+        },
+        {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+        {
+          "borderBottomLeftRadius": 6,
+          "borderBottomRightRadius": 6,
+          "borderTopLeftRadius": 6,
+          "borderTopRightRadius": 6,
+        },
+      ]
+    }
+  >
+    <Text />
+    <Text
+      style={
+        [
+          {
+            "color": "#fff",
+          },
+          {
+            "marginLeft": 4,
+          },
+        ]
+      }
+    >
+      Add To Cart
+    </Text>
+  </View>
+</View>
+`;

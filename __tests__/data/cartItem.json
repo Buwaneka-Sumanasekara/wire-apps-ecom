@@ -1,0 +1,32 @@
+{
+    "currency": "GBP",
+    "id": "4",
+    "lineAmount": 50,
+    "name": "PUMA Roma Basic",
+    "price": 50,
+    "productInfo": {
+        "SKU": "1247",
+        "brandName": "Puma",
+        "colour": "purple",
+        "description": "Complete that vintage 60’s look with the PUMA Roma Basic, a near carbon copy of the original.Features a leather, nubuck, or canvas upper for a range of style.EVA midsole adds cushioning.Rubber outsole supplies durable traction.",
+        "id": "4",
+        "mainImage": "https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com/media/44abed599ef04cf5b728cab676d57b5d_35857601_fr_puma_sc7.jpeg",
+        "name": "PUMA Roma Basic",
+        "price": {
+            "amount": "50.00",
+            "currency": "GBP"
+        },
+        "qty": 1,
+        "seletedSize": "8",
+        "sizes": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "stockStatus": "IN STOCK"
+    },
+    "qty": 1,
+    "size": "8",
+    "uniqueId": "4-8"
+}

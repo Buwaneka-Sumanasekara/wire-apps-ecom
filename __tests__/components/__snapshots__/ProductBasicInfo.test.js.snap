@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductBasicInfo /> rendered sucessfully 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "flexDirection": "row",
+      },
+      {
+        "justifyContent": "space-between",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "width": "66.666667%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#475569",
+          },
+          {
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+    >
+      Nike
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "fontWeight": "700",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+        ]
+      }
+    >
+      Nike Air Relentless 4 Mens Running Shoes
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "width": "33.333333%",
+        },
+        {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "flex-end",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontWeight": "700",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+        ]
+      }
+    >
+      45 GBP
+    </Text>
+  </View>
+</View>
+`;

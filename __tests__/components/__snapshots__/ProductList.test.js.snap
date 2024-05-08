@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductList /> rendered sucessfully 1`] = `
+<RCTScrollView
+  ListEmptyComponent={
+    <ListEmptyComponent
+      text="No Items found"
+    />
+  }
+  ListFooterComponent={
+    <Spacer
+      size={3}
+    />
+  }
+  ListHeaderComponent={
+    <Spacer
+      size={1}
+    />
+  }
+  contentContainerStyle={
+    {
+      "paddingHorizontal": 8,
+    }
+  }
+  data={
+    [
+      {
+        "SKU": "1210",
+        "brandName": "Nike",
+        "colour": "blue",
+        "description": "Hit the tracks in these Nike Air Relentless 4 featuring flexible forefoot sole and Reslon midsole underfoot cushioning for superior comfort at each step. The ridged outsole ensures excellent traction while the cushioned ankle collar and the anatomically shaped insole guarantee great support for the whole foot. The mesh upper panels provide breathability and airflow within the shoe.",
+        "id": "1",
+        "mainImage": "https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com/media/7e386191b2ee40b290886a05d3e10e24_nike-air-relentless-a.jpg",
+        "name": "Nike Air Relentless 4 Mens Running Shoes",
+        "price": {
+          "amount": 45,
+          "currency": "GBP",
+        },
+        "sizes": [
+          "8",
+          "9",
+          "10",
+          "11",
+        ],
+        "stockStatus": "IN STOCK",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+    >
+      <View />
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+              "paddingBottom": 8,
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "width": "50%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "flexBasis": "0%",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                {
+                  "backgroundColor": "#fff",
+                },
+                {
+                  "borderBottomLeftRadius": 6,
+                  "borderBottomRightRadius": 6,
+                  "borderTopLeftRadius": 6,
+                  "borderTopRightRadius": 6,
+                },
+                {
+                  "paddingBottom": 12,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 12,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com/media/7e386191b2ee40b290886a05d3e10e24_nike-air-relentless-a.jpg",
+                }
+              }
+              style={
+                [
+                  {
+                    "width": "75%",
+                  },
+                  {
+                    "aspectRatio": 1,
+                  },
+                  {
+                    "alignSelf": "center",
+                  },
+                ]
+              }
+            />
+            <Text
+              style={
+                [
+                  {
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  },
+                  {
+                    "color": "#000",
+                  },
+                  {
+                    "fontWeight": "600",
+                  },
+                ]
+              }
+            >
+              45 GBP
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "display": "flex",
+                  },
+                  {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={2}
+                style={
+                  [
+                    {
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                    },
+                    {
+                      "color": "#64748b",
+                    },
+                    {
+                      "width": "80%",
+                    },
+                  ]
+                }
+              >
+                Nike Air Relentless 4 Mens Running Shoes
+              </Text>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          [
+            {
+              "paddingBottom": 12,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 12,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
