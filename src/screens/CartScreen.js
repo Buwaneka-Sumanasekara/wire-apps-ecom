@@ -6,10 +6,10 @@ import { useAddItemToCart, useCartItems, useUpdateItemToCart } from '../hooks/us
 const CartScreen = () => {
  
     const {items,totalAmount}=useCartItems();
-    const {updateCartItem}=useUpdateItemToCart();
+    const {addToCart}=useAddItemToCart();
 
     const onChangeQty=useCallback((item,size,qty)=>{
-        updateCartItem(item.id,size,qty);
+      addToCart(item,size,qty);
     },[])
 
   return (

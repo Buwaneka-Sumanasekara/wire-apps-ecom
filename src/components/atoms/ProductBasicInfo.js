@@ -1,7 +1,8 @@
 import React from "react"
 import { View, Text } from "react-native"
 
-export default ProductBasicInfo = ({ name, brandName, price }) => {
+export default ProductBasicInfo = ({item}) => {
+    const { name, brandName, price }=item;
     return <View className={"flex flex-row justify-between"}>
         <View className={"w-2/3"}>
             <Text className={"text-slate-600 uppercase"}>{brandName}</Text>

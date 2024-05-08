@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addItemToCart,removeItemFromCart,updateItemQty } from '../store/modules/cartSlice';
+import { addItemToCart,removeItemFromCart } from '../store/modules/cartSlice';
 
 
 /*=================Add item to cart====================*/
@@ -12,15 +12,7 @@ export const useAddItemToCart = (onSuccess=()=>{}) => {
     return { addToCart };
 }
 
-export const useUpdateItemToCart = (onSuccess=()=>{}) => {
-    const dispatch = useDispatch();
-    const updateCartItem = (id,size,qty) => {
-        const uniqueId=`${id}-${size}`
-        dispatch(updateItemQty({uniqueId,qty}));
-        onSuccess();
-    }
-    return { updateCartItem };
-}
+
 
 
 export const useRemoveItemFromCart = () => {

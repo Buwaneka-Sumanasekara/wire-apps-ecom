@@ -12,22 +12,23 @@ import { showMessage } from "react-native-flash-message"
 
 
 const ProductDetailsBody = (props) => {
+    const {onChangeQty,item}=props;
     const [qty,setQty]=useState(1)
     const {onChangeSize,selectedSize}=useChangeProductSize();
-    const {addToCart}=useAddItemToCart(()=>showMessage({message:"Success",description:"Item added to the cart",type:"success"}));
+    
 
     return (
         <View className={"pt-3 pb-32"}>
-            <ProductBasicInfo {...props} />
-            <ProductSizes {...props} selectedSize={selectedSize} onChange={onChangeSize} />
+            <ProductBasicInfo item={item} />
+            <ProductSizes sizes={(item?.sizes || [])} selectedSize={selectedSize} onChange={onChangeSize} />
             <View className={"mt-5 flex flex-row"}>
                 <QtyInput onChangeQty={setQty} qty={qty} />
                 <AddToCartButton  isDisabled={!selectedSize} onPress={()=>{
-                    addToCart(props,selectedSize,qty)
+                    onChangeQty(item,selectedSize,qty)
                 }}/>
             </View>
             <View className={"mt-5 w-fit"}>
-                <Text>{props.description}</Text>
+                <Text>{item.description}</Text>
             </View>
         </View>
     )

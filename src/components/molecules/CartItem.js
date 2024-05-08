@@ -16,11 +16,13 @@ const CartItem = ({ item,onChangeQty }) => {
             <View className={"flex flex-row mb-1"}>
                 <Text className={"text-slate-500"}>{`Price: ${formatPrice(item.price,item.currency)}`}</Text>
             </View>
-            <Text className={"bg-black text-white font-bold p-2"}>{`Size: ${item.size}`}</Text>
+            <Text className={"bg-black text-xs text-white font-bold p-2"}>{`Size: ${item.size}`}</Text>
         </View>
         <View className={"basis-2/6 flex items-end"}>
             <Text className={"text-sm text-black font-bold mb-2"}>{`${formatPrice(item.lineAmount,item.currency)}`}</Text>
-            <QtyInput qty={item.qty} onChangeQty={(qty) => onChangeQty(item,item.size,qty)} />
+            <QtyInput qty={item.qty} onChangeQty={(qty) => {
+                onChangeQty(item?.productInfo,item.size,qty)
+            }} />
         </View>
     </View>;
 }

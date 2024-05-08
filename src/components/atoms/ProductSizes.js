@@ -4,19 +4,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 
 
 
-const ProductSizes = ({ sizes,selectedSize:passedSelectedSize,onChange }) => {
-    const [selectedSize, setSelectedSize] = useState(passedSelectedSize || null);
-
-
-
-    useEffect(() => {
-        onChange(selectedSize);
-    }, [selectedSize,onChange])
-
-
-    const handleSizeSelection = useCallback((size) => {
-        setSelectedSize(size);
-    }, [sizes])
+const ProductSizes = ({onChange,selectedSize,sizes}) => {
 
     return (
         <View className={"mt-3"}>
@@ -27,7 +15,7 @@ const ProductSizes = ({ sizes,selectedSize:passedSelectedSize,onChange }) => {
                     return (
                         <TouchableOpacity
                             key={`size-id-${size}`}
-                            onPress={() => handleSizeSelection(size)}
+                            onPress={() => onChange(size)}
                             className={`${(isSelected ? `bg-black` : `bg-slate-100`)} p-3 rounded-lg`}>
                             <Text className={(isSelected ? "text-white" : "text-black")}>{size}</Text>
                         </TouchableOpacity>
