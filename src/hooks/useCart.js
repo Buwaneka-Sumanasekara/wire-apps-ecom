@@ -13,16 +13,14 @@ export const useAddItemToCart = (onSuccess=()=>{}) => {
 }
 
 
-
-
+/*=================Remove item from cart====================*/
 export const useRemoveItemFromCart = () => {
     const dispatch = useDispatch();
-    const removeFromCart = (product) => {
-        dispatch(removeItemFromCart(product));
+    const removeFromCart = (uniqueId) => {
+        dispatch(removeItemFromCart({uniqueId}));
     }
     return { removeFromCart };
 }
-
 
 
 
@@ -37,6 +35,8 @@ export const useCartSummary = () => {
     };
 }
 
+
+/*=================Get Cart Items====================*/
 export const useCartItems = () => {
     const cartItems = useSelector(state => state.cart.items)
     const totalAmount = useSelector(state => state.cart.totalAmount)

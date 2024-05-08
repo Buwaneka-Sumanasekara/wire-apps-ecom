@@ -6,7 +6,7 @@ import Spacer from '../atoms/Spacer';
 import ListEmptyComponent from '../atoms/ListEmptyComponent';
 
 
-const Cart = ({ cartItems, onChangeQty, onPressItem }) => {
+const Cart = ({ cartItems, onChangeQty, onPressItem,onRemoveItem }) => {
     return (
         <View style={{ flex: 1 }}>
             <FlatList
@@ -15,6 +15,7 @@ const Cart = ({ cartItems, onChangeQty, onPressItem }) => {
                 renderItem={({ item }) => <CartItem item={item}
                     onChangeQty={(item, size, qty) => onChangeQty(item, size, qty)}
                     onPressItem={(item) => onPressItem(item)}
+                    onRemoveItem={(uniqueId) => onRemoveItem(uniqueId)}
                 />}
                 keyExtractor={(item) => item.uniqueId}
                 ListFooterComponent={<Spacer isHeight={true} size={"[200px]"} />}
