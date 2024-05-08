@@ -11,7 +11,9 @@ const ProductDetails = ({ item, onPressAddToCart, onChangeSize, selectedSize }) 
             <Image source={{ uri: mainImage }} className={"w-full h-[350px]"} />
             <ProductDetailsBody
                 selectedSize={selectedSize}
-                item={item} onAddToCart={(item, size, qty) => onPressAddToCart(item, size, qty)} onChangeSize={onChangeSize} />
+                item={item} onAddToCart={(item, size, qty) => onPressAddToCart(item, size, qty)}
+                onChangeSize={onChangeSize}
+            />
         </React.Fragment>
     )
 }
