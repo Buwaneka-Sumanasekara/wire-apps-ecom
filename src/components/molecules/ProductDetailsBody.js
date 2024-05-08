@@ -7,13 +7,14 @@ import { useChangeProductSize } from "../../context/ProductContext"
 import QtyInput from "../atoms/QtyInput"
 import AddToCartButton from "../atoms/AddToCartButton"
 import { useAddItemToCart } from "../../hooks/useCart"
+import { showMessage } from "react-native-flash-message"
 
 
 
 const ProductDetailsBody = (props) => {
     const [qty,setQty]=useState(1)
     const {onChangeSize,selectedSize}=useChangeProductSize();
-    const {addToCart}=useAddItemToCart();
+    const {addToCart}=useAddItemToCart(()=>showMessage({message:"Success",description:"Item added to the cart",type:"success"}));
 
     return (
         <View className={"pt-3 pb-32"}>

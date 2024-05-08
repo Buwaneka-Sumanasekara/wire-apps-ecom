@@ -10,7 +10,7 @@ export const cartSlice = createSlice({
     addItemToCart: (state, action) => {
         const newItem = action.payload
         const {amount,currency}=newItem.price
-        const uniqueId=`${newItem.id}-${newItem.size}`
+        const uniqueId=`${newItem.id}-${newItem.seletedSize}`
         const existingItem = state.items.find(item => (item.uniqueId === newItem.uniqueId))
 
         const price=parseFloat(amount)
@@ -38,7 +38,7 @@ export const cartSlice = createSlice({
     },
     removeItemFromCart: (state, action) => {
         state.items = state.items.filter(item => item.id !== action.payload.id)
-        state.totalAmount -= state.items.reduce((acc, item) => acc + item.price * item.qty, 0)
+        state.totalAmount = state.items.reduce((acc, item) => acc + item.price * item.qty, 0)
     },
     clearCart: (state) => {
         state.items = []
@@ -48,14 +48,14 @@ export const cartSlice = createSlice({
         state.totalAmount = state.items.reduce((acc, item) => acc + item.price * item.qty, 0)
     },
     updateItemQty: (state, action) => {
-        const { uniqueId, qty, } = action.payload
+        const { uniqueId, qty } = action.payload
         const foundItem = state.items.find(item => item.uniqueId === uniqueId)
 
         if(foundItem){
             foundItem.qty = qty
             foundItem.lineAmount = foundItem.price * foundItem.qty
-            state.items=state.items.map(item => item.id === id ? { ...item, ...foundItem } : item)
-            state.totalAmount += (qty - item.qty) * item.price
+            state.items=state.items.map(item => (item.uniqueId === uniqueId ? { ...foundItem } : item))
+            state.totalAmount = state.items.reduce((acc, item) => acc + item.price * item.qty, 0)
         }
       
     }
@@ -63,6 +63,6 @@ export const cartSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { addItemToCart,removeItemFromCart } = cartSlice.actions
+export const { addItemToCart,removeItemFromCart,updateItemQty } = cartSlice.actions
 
 export default cartSlice.reducer

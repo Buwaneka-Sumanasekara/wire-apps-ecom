@@ -6,6 +6,8 @@ import CartSummary from "../components/molecules/CartSummary";
 
 //Screens
 import HomeScreen from "../screens/HomeScreen";
+import CartScreen from "../screens/CartScreen";
+
 import { useCartSummary } from "../hooks/useCart";
 
 
@@ -41,7 +43,7 @@ const HomeStack = () => {
 
         >
             <Tab.Screen name="HomeScreen"   options={{ title:"Home",headerTitle: "", headerRight: (props) => <CartSummary {...props} /> }} component={HomeScreen} />
-            <Tab.Screen name="CartScreen"options={{title:"Cart"}} component={HomeScreen} />
+            <Tab.Screen name="CartScreen"options={{title:"Cart"}} component={CartScreen} />
         </Tab.Navigator>
     );
 }
