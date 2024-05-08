@@ -6,7 +6,7 @@ import { formatPrice } from '../../utils/CommonUtils';
 const CartTotalSummary = () => {
     const { totalAmount, itemsCount } = useCartSummary()
     return (
-        <View className={"flex flex-col items-end py-5 pr-2 bg-slate-100 shadow absolute bottom-0 w-screen"}>
+        <View className={"flex flex-col items-end py-5 pr-2 bg-slate-100 shadow w-screen"}>
             <View className={"flex flex-row"}>
                 <Text className={"font-normal text-base text-slate-600 ml-2 "}>{`No Of Items`}</Text>
                 <Text className={"font-bold text-base text-slate-600 ml-2"}>{`${itemsCount}`}</Text>

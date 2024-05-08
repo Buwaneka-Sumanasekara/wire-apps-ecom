@@ -6,25 +6,24 @@ import Spacer from '../atoms/Spacer';
 import ListEmptyComponent from '../atoms/ListEmptyComponent';
 
 
-const Cart = ({ cartItems, onChangeQty, onPressItem,onRemoveItem }) => {
+const Cart = ({ cartItems, onChangeQty, onPressItem, onRemoveItem }) => {
     return (
-        <View style={{ flex: 1 }}>
-            <FlatList
-                data={cartItems}
-                extraData={cartItems}
-                renderItem={({ item }) => <CartItem item={item}
-                    onChangeQty={(item, size, qty) => onChangeQty(item, size, qty)}
-                    onPressItem={(item) => onPressItem(item)}
-                    onRemoveItem={(uniqueId) => onRemoveItem(uniqueId)}
-                />}
-                keyExtractor={(item) => item.uniqueId}
-                ListFooterComponent={<Spacer isHeight={true} size={"[200px]"} />}
-                showsHorizontalScrollIndicator={false}
-                showsVerticalScrollIndicator={false}
-                ListEmptyComponent={<ListEmptyComponent isLoading={false} text={"Cart is empty"} />}
-            />
-            <CartTotalSummary />
-        </View>
+        <FlatList
+            data={cartItems}
+            extraData={cartItems}
+            renderItem={({ item }) => <CartItem item={item}
+                onChangeQty={(item, size, qty) => onChangeQty(item, size, qty)}
+                onPressItem={(item) => onPressItem(item)}
+                onRemoveItem={(uniqueId) => onRemoveItem(uniqueId)}
+            />}
+            keyExtractor={(item) => item.uniqueId}
+            ListFooterComponent={<Spacer isHeight={true} size={"[400px]"} />}
+            showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
+            ListEmptyComponent={<ListEmptyComponent isLoading={false} text={"Cart is empty"} />}
+            ListHeaderComponent={<CartTotalSummary />}
+            stickyHeaderIndices={[0]}
+        />
     );
 
 }

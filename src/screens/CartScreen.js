@@ -7,10 +7,11 @@ import { useAddProductToCache } from '../hooks/useProducts';
 
 const CartScreen = () => {
   const navigation = useNavigation();
+
+  
   const { items, totalAmount } = useCartItems();
   const { addToCart } = useAddItemToCart();
   const { removeFromCart } = useRemoveItemFromCart();
-
   const { showItem } = useAddProductToCache((item) => {
     navigation.navigate('ProductScreen', {
       itemId: item.id
