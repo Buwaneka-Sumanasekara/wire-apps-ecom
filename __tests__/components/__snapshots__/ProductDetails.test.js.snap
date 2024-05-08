@@ -548,6 +548,15 @@ exports[`<ProductDetails/> rendered sucessfully 1`] = `
             </View>
           </View>
           <View
+            style={
+              [
+                {
+                  "paddingRight": 8,
+                },
+              ]
+            }
+          />
+          <View
             accessibilityState={
               {
                 "busy": undefined,

@@ -5,7 +5,7 @@ import QtyInput from '../atoms/QtyInput';
 import { formatPrice } from '../../utils/CommonUtils';
 import { useTheme } from '@react-navigation/native';
 
-const CartItem = ({ item, onChangeQty, onPressItem,onRemoveItem }) => {
+const CartItem = ({ item, onChangeQty, onPressItem, onRemoveItem }) => {
     const theme = useTheme();
     return <View className={"flex flex-row p-3"}>
         <TouchableOpacity className={"basis-1/6 pr-4 items-start"} onPress={() => onPressItem(item?.productInfo)}>
@@ -23,7 +23,6 @@ const CartItem = ({ item, onChangeQty, onPressItem,onRemoveItem }) => {
                     <Ionicons name={"trash-bin-outline"} size={22} color={theme.colors.primary} />
                 </TouchableOpacity>
             </View>
-
         </View>
         <View className={"basis-2/6 flex items-end"}>
             <Text className={"text-sm text-black font-bold mb-2"}>{`${formatPrice(item.lineAmount, item.currency)}`}</Text>
