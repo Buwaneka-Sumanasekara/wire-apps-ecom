@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, View } from "react-native";
+import { FlatList } from "react-native";
 import ProductCard from "../molecules/ProductCard";
 import theme from "../../theme/theme.json";
 import Spacer from "../atoms/Spacer";

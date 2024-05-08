@@ -7,7 +7,6 @@ import { showMessage } from 'react-native-flash-message';
 import { useChangeProductSize } from '../context/ProductContext';
 
 
-
 const ProductScreen = ({ route }) => {
     const { itemId } = route.params;
     const product = useGetProductFromCache(itemId);

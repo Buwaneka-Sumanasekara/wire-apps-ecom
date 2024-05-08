@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList } from 'react-native';
 import CartItem from '../molecules/CartItem';
 import CartTotalSummary from '../atoms/CartTotalSummary';
 import Spacer from '../atoms/Spacer';
