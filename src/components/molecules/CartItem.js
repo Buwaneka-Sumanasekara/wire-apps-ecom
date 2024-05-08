@@ -1,16 +1,13 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import QtyInput from '../atoms/QtyInput';
 import { formatPrice } from '../../utils/CommonUtils';
 
-const CartItem = ({ item,onChangeQty }) => {
-
-    
-
+const CartItem = ({ item,onChangeQty ,onPressItem}) => {
     return <View className={"flex flex-row p-3"}>
-        <View className={"basis-1/6 pr-4 items-start"}>
+        <TouchableOpacity className={"basis-1/6 pr-4 items-start"} onPress={()=>onPressItem(item?.productInfo)}>
             <Image source={{ uri: item?.productInfo?.mainImage }} resizeMode={"contain"} resizeMethod={"resize"} className={"w-full h-12"} />
-        </View>
+        </TouchableOpacity>
         <View className={"basis-3/6 items-start"}>
             <Text className={"font-bold mb-1"}>{item.name}</Text>
             <View className={"flex flex-row mb-1"}>

@@ -10,7 +10,7 @@ export const cartSlice = createSlice({
         addItemToCart: (state, action) => {
             const newItem = action.payload
             const { amount, currency } = newItem.price
-            const uniqueId = `${newItem.id}-${newItem.seletedSize}`
+            const uniqueId = `${newItem.id}_${newItem.seletedSize}`
             const existingItem = state.items.find(item => (item.uniqueId === uniqueId))
 
            
@@ -32,14 +32,9 @@ export const cartSlice = createSlice({
                     productInfo: newItem,
                     lineAmount: lineAmount
                 })
-
-               
             } else {
-               
-
                 existingItem.qty = qty
                 existingItem.lineAmount =lineAmount
-
                 state.items = state.items.map(item => item.id === existingItem.id ? { ...item, ...existingItem } : item)
             }
 
