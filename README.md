@@ -51,3 +51,9 @@ or
 ``
 npm start
 ``
+
+# Run tests
+
+```
+yarn test
+```
