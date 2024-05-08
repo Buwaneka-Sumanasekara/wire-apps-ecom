@@ -15,7 +15,7 @@ export default QtyInput = ({ onChangeQty, qty }) => {
     }, [qty])
 
     return (
-        <View className={"flex flex-row"}>
+        <View className={`flex flex-row`}>
             <TouchableOpacity className={"bg-black p-2 justify-center items-center"} onPress={() => onDeductQty()}>
                 <Ionicons name={"remove"} size={15} color={"white"} />
             </TouchableOpacity>

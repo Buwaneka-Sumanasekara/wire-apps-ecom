@@ -15,6 +15,7 @@ const ProductDetailsBody = (props) => {
             <ProductSizes sizes={(item?.sizes || [])} selectedSize={selectedSize} onChange={onChangeSize} />
             <View className={"mt-5 flex flex-row"}>
                 <QtyInput onChangeQty={setQty} qty={qty} />
+                <View className={"pr-2"}/>
                 <AddToCartButton isDisabled={!selectedSize} onPress={() => {
                     onAddToCart(item, selectedSize, qty)
                 }} />
