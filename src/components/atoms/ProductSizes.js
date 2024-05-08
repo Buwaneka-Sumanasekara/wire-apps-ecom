@@ -1,11 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
-
-
-
-const ProductSizes = ({onChange,selectedSize,sizes}) => {
-
+const ProductSizes = ({ onChange, selectedSize, sizes }) => {
     return (
         <View className={"mt-3"}>
             <Text>{"Choose size"}</Text>

@@ -5,8 +5,8 @@ import { useTheme } from '@react-navigation/native';
 import { useCartSummary } from '../../hooks/useCart';
 
 const CartSummary = () => {
-    const theme=useTheme()
-    const {totalAmount}=useCartSummary()
+    const theme = useTheme()
+    const { totalAmount } = useCartSummary()
     return (
         <View className={"flex flex-row items-center pr-4"}>
             <Ionicons name={"cart"} size={18} color={theme.colors.primary} />

@@ -13,14 +13,12 @@ export const cartSlice = createSlice({
             const uniqueId = `${newItem.id}_${newItem.seletedSize}`
             const existingItem = state.items.find(item => (item.uniqueId === uniqueId))
 
-           
             const qty=parseInt(newItem.qty || 1)
             const price = parseFloat(amount)
             const lineAmount = parseFloat(price * qty)
            
             if (!existingItem) {
                 
-
                 state.items.push({
                     uniqueId: uniqueId,
                     id: newItem.id,
@@ -35,7 +33,7 @@ export const cartSlice = createSlice({
             } else {
                 existingItem.qty = qty
                 existingItem.lineAmount =lineAmount
-                state.items = state.items.map(item => item.id === existingItem.id ? { ...item, ...existingItem } : item)
+                state.items = state.items.map(item => item.uniqueId === existingItem.uniqueId ? { ...item, ...existingItem } : item)
             }
 
             state.totalAmount = state.items.reduce((acc, item) => acc + item.lineAmount, 0)
