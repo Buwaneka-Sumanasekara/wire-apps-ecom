@@ -23,9 +23,9 @@ Welcome to WireApps Ecommerce App!
 - Cart
 
 ## Screenshots
-![Screenshot 1](/screenshots/screen1.png)
-![Screenshot 2](/screenshots/screen2.png)
-![Screenshot 3](/screenshots/screen3.png)
+![Screenshot 1](/screenshots/screen1.png|width=10)
+![Screenshot 2](/screenshots/screen2.png|width=10)
+![Screenshot 3](/screenshots/screen3.png|width=10)
 
 ## Installation
 1. Clone the repository:
