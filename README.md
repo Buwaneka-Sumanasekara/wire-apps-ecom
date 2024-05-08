@@ -12,6 +12,7 @@ Welcome to WireApps Ecommerce App!
   - React Navigation
   - Tailwind Css
   - JavaScript
+  - React Native Flash Message
 
 ## Design 
   - Atomic Design methodology
@@ -38,24 +39,34 @@ Welcome to WireApps Ecommerce App!
 1. Clone the repository:
    ```bash
    git clone https://github.com/Buwaneka-Sumanasekara/wire-apps-ecom.git
-
+   ```
 
 2. Add base api url to env as follows
-``
+```
 EXPO_PUBLIC_API_URL=https://s3-eu-west-1.amazonaws.com/api.themeshplatform.com
-``
+```
 
-3. Run application using following command
+3. Install dependencies
 
-``
+```
+npm install
+```
+or
+```
+yarn install
+```
+
+4. Run application using following command
+
+```
 yarn start 
-``
+```
 
 or 
 
-``
+```
 npm start
-``
+```
 
 # Run tests
 
