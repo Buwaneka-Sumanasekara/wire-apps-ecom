@@ -23,10 +23,15 @@ Welcome to WireApps Ecommerce App!
 - Cart
 
 ## Screenshots
+<table>
+   <tr>
+      <td><img src="/screenshots/screen1.png" width="150" height="300"/></td>
+      <td><img src="/screenshots/screen2.png" width="150" height="300"/></td>
+      <td><img src="/screenshots/screen3.png" width="150" height="300"/></td>
+   </tr>
+</table>
 
-<img src="/screenshots/screen1.png" width="80" height="100"/>
-<img src="/screenshots/screen2.png" width="80" height="100"/>
-<img src="/screenshots/screen3.png" width="80" height="100"/>
+
 
 
 ## Installation
